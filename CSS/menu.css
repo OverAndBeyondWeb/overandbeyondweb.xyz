@@ -1,0 +1,62 @@
+/*  CSS Document                             */
+/*  Written by Chris Converse for Lynda.com  */
+
+/* Style */
+
+body { font: 12px Arial; margin: 0px; padding: 0px 20px; background-color: #736b02; }
+
+h1 { margin: 0 0 1em 0;  font-size: 1.7em; font-weight: normal; }
+h2 { margin: 0 0 .5em 0; font-size: 1.3em; }
+p { margin: 0 0 1em 0; }
+aside p { color: #777; }
+footer { font-size: .9em; }
+
+
+/* Layout */
+.page { max-width: 980px; margin: 0px auto; padding: 0px; }
+header { position: relative; height: 28px; margin: 0px; padding-top: 80px; background: url(../Drop%20Down%20Menu/images/banner.jpg) no-repeat 50% 0px;}
+header a.logo { width: 120px; height: 70px; position: absolute; top: 15px; left: 15px; background: url(../Drop%20Down%20Menu/images/logo.png) no-repeat 0px 0px; display: inline-block; }
+nav { background-color: rgba(0,0,0,.3); }
+article { margin: 0px; padding: 25px; background-color: #fff; }
+aside { width: 200px; float: right; margin: 0px 0px 10px 40px; padding: 0px 0px 0px 20px; border-left: 2px solid #ccc; }
+aside p { margin: 0px; }
+footer { border-top: 1px solid #ddd; margin: 0px; padding: 10px 25px 10px 10px; color: rgba(255,255,255,.4); }
+
+.clear { clear: both; line-height: 1px; }
+
+
+/* Dropdown Menus */
+
+	.nav_menu { position: relative; z-index: 1000; margin: 0px; padding: 0px; }
+
+/* drop menu */
+	.nav_menu .dropmenu { margin: 0; padding: 0; height: 28px; display: none; /* displays after menu load */ }
+	
+	/* all items  */
+	.nav_menu ul.dropmenu li { height: 28px; }
+	.nav_menu ul.dropmenu li:hover { background-color: #8a3769; }
+	.nav_menu ul.dropmenu li.selected { background-color: #700203; }
+	.nav_menu ul.dropmenu li a { color: #fff; text-decoration: none; padding: 0px; line-height: 12px; }
+	.nav_menu ul.dropmenu li.selected a { color: #ffd200; }
+	
+	/* topitems */
+	.nav_menu ul.dropmenu { margin: 0px; padding: 0px; }
+	.nav_menu ul.dropmenu a.toplevel { height: auto; margin: 7px 20px 7px 20px; padding: 0px 0px 4px 0px; color: #fff; font-weight: bold; text-decoration: none; }
+	.nav_menu ul.dropmenu a.toplevel.hover { color: #fff; }
+	.nav_menu ul.dropmenu a.toplevel.selected { color: #f7ad0b; }
+	.nav_menu ul.dropmenu a.toplevel.hover.selected {  }
+	
+	/* subitems */
+	.nav_menu ul.dropmenu li ul { background-color: #8a3769; border-top: 1px solid #fff; }
+	.nav_menu ul.dropmenu li ul li a.sublevel { color: #fff; width: 150px; padding: 5px 5px 5px 20px; margin: 0px; }
+	.nav_menu ul.dropmenu li ul li a.sublevel.hover { color: #fff; background-color: #ad548a; }
+	.nav_menu ul.dropmenu li ul li a.sublevel.selected { color: #f7ad0b; }
+	.nav_menu ul.dropmenu li ul li a.sublevel.hover.selected {  }
+	
+	/* sub subitems */
+	.nav_menu ul.dropmenu li ul ul { left: -10px; border: none; border-left: 1px solid #fff; }
+	
+	/* Sub Menu Indicators */
+	.nav_menu ul.dropmenu a.indicator { background: url(../images/arrow_right.gif) no-repeat right 50%; }
+	.nav_menu ul.dropmenu a.toplevel.indicator { background: url(../images/arrow_down.gif) no-repeat 0px bottom; }
+

@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+aside, article, section {
+	padding: 0;
+	margin: 0;	
+}
+html, body{
+	padding: 0;
+	margin: 0;	
+}
+body{
+	background-image: url(../images/docBG.jpg);
+	font-family: Verdana, Geneva, sans-serif;	
+}
+#fullContainer {
+	padding: 0;
+	width: 980px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+}
+header {
+	background-image: url(../images/marquee%20logo.jpg);
+	width: 980px;
+	margin: 0;
+	padding: 0;
+	height: 150px;
+	position: relative;
+}
+
+nav{
+	height: 40px;
+	width: 980px;
+	background-color: #336;
+	position: absolute;
+	top: 150px;
+	margin: 0;
+	padding: 0;
+}
+nav ul {
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	
+	border-right: 1px solid #1e1e3d;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	background-image: -webkit-linear-gradient(top, #3b3b75, #336);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 #292929;
+	margin: 0;
+}
+
+nav a {
+	color: #FFF;
+	width: 161px;
+	height: 40px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	line-height: 40px;
+	font-weight: bold;
+}
+nav a:last-child {
+	width: 161px;
+	border-right: none;
+}
+#page{
+	background-color: #FFF;
+	position: absolute;
+	top: 190px;
+	width: 980px;
+	height: 1200px;
+}
+
+.marquee_container {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 30px;
+	margin-left: 0;
+	overflow: hidden;
+	position: relative;
+	height: 350px;
+	width: 700px;
+}
+#prev {
+	background-image: url(../images/marquee/prev.png);
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 70px;
+	position: absolute;
+	top: 140px;
+	left: 20px;
+	z-index: 5;
+}
+#next {
+	background-image: url(../images/marquee/next.png);
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 70px;
+	position: absolute;
+	top: 140px;
+	right: 20px;
+	z-index: 5;
+}
+section {
+	color: #202020;
+	background-color: #fcfebd;
+	width: 550px;
+	border-radius: 15px;
+	position: absolute;
+	left: 30px;
+	top: 380px;
+}
+article {
+	color: #202020;
+	background-color: #fcfebd;
+	margin: 0;
+	padding: 0;
+	width: 340px;
+	border-radius: 15px;
+	position: absolute;
+	top: 380px;
+	right: 30px;
+}
+p {
+	padding: 10px;
+}
+h1, h2 {
+	padding: 10px;	
+}
+.marquee_photos {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#caption_box {
+	background-color: #FFF;
+	height: 350px;
+	width: 280px;
+	position: absolute;
+	left: 700px;
+	top: 0;
+	overflow: hidden;
+}
+
+.marquee_caption {
+	color: #FFF;
+	background-image: url(../images/marquee/marquee_caption.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin: 0;
+	width: 280px;
+	padding-top: 15px;
+	padding-right: 150px;
+	padding-bottom: 0;
+	padding-left: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 350px;
+}
+.marquee_caption_content {
+	width: 240px;
+	padding-top: 25px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+.marquee_caption h2 {
+	font-size: 1.25em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 12px;
+	margin-left: 0;
+}
+.marquee_caption_content p {
+	color: #FFF;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 12px;
+	margin-left: 0;
+}
+.marquee_caption_content a {
+	color: #FC0;
+}
+.marquee_caption_content a:hover {
+	color: #FFF;
+}
+.marquee_caption_content .marquee_flag {
+	float: left;
+	margin-right: 10px;
+}
+.marquee_nav {
+	text-align: right;
+	position: absolute;
+	width: 240px;
+	top: 310px;
+	right: 20px;
+}
+.marquee_nav a {
+	display: inline-block;
+	background-image: url(../images/marquee/nav_buttons.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 18px;
+	width: 18px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.marquee_nav a:hover {
+	background-position: -25px 0;
+}
+.marquee_nav a.selected {
+	background-position: -50px 0;
+}
+.marquee_panels {
+	display: none;
+}
+footer {
+	text-align: center;
+	line-height: 6em;
+	background-color: #FC3;
+	height: 100px;
+	width: 980px;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #FFF;
+}

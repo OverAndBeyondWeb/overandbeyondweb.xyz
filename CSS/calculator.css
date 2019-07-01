@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+html, body{
+	margin: 0;
+	padding: 0;	
+}
+body {
+	background-image: url(../images/altCalcBG3.jpg);
+}
+#top-menu {
+	background-image: url(../images/calcTopMenu.jpg);
+	height: 50px;
+	background-repeat: repeat-x;
+}
+#header {
+	background-image: url(../images/calcBanner.jpg);
+	height: 148px;
+	border-bottom: 2px solid #660;
+	padding: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+}
+#graphic {
+	background-image:url(../images/goldCalc.png);
+	height: 150px;
+	width: 980px;
+	margin: 0 auto;
+	padding: 0;
+}/**/
+
+#overallWrapper {
+	height: 800px;
+	width: 980px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: none;
+	background-color: #f8f5d4;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	right: 0;	
+}
+nav {
+	background-color: #f6f3d2;
+	background-image: url(../images/calcNav.jpg);
+	display: block;
+	padding: 0;
+	height: 40px;
+	width: 980px;
+	margin-top: 0;
+	position: absolute;
+	top: 0;
+}
+nav ul {
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	float: left;
+	width: 161px;
+	height: 40px;
+	border-right: 1px solid #9c9c01;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav li:last-child {
+	width: 163px;
+}
+nav a {
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+#page {
+	width: 978px;
+	height:600px;
+	background-color: #e0ddd1;
+	background-image:url(../images/calcPage.jpg);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	border-top: 1px solid #eeebcb;
+	border-left: 1px solid #eeebcb;
+	border-right: 1px solid #eeebcb;
+	background-position: -10px;
+}
+#left {
+	background: rgba(246, 249, 193, 0.5);
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1.5em;
+	color: #FFF;
+	text-shadow: 2px 4px 3px rgba(58, 60, 27, 0.3);
+	height: 400px;
+	width: 220px;
+	border-radius: 15px;
+	padding: 0 15px;
+	position: absolute;
+	top:120px;
+	left: 35px;
+	box-shadow: 0 3px 3px #757258;
+}
+#right {
+	background: rgba(246, 249, 193, 0.5);
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1.5em;
+	color: #FFF;
+	text-shadow: 2px 4px 3px rgba(58, 60, 27, 0.3);
+	height: 400px;
+	width: 220px;
+	padding: 0 15px;
+	border-radius: 15px;
+	position: absolute;
+	top:120px;
+	right: 35px;
+	box-shadow: 0 3px 3px #757258;
+}
+#calcInterfaceWrap {
+	height: 400px;
+	width: 284px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	border-radius: 8px;
+	background-image: url(../images/calcCase.png);
+	background-color: #e6ec83;
+	box-shadow: 3px 3px 3px #978655;
+}
+#operationWin {
+	float: left;
+	padding-left: 10px;
+	font-size: 24px;
+	height: 73px;
+	width: 41px;
+}
+#calcScreen {
+	background-color: #999;
+	display: block;
+	height: 73px;
+	width: 282px;
+	margin-bottom: 40px;
+	border-radius: 8px;
+	background-image: url(../images/calcScreen.png);
+	background-repeat: no-repeat;
+	background-position: -2px -1px;
+}
+#numWindow1 {
+	float:right;
+	padding-right: 10px;
+	font-size: 24px;	
+}
+#numWindow2 {
+	float: right;
+	padding-right: 10px;
+	font-size: 24px;
+	clear:right;
+}
+.line {
+	background-color: #eae4a2;
+	display: block;
+	-webkit-box-shadow: 1px 0 5px 1px #978655;
+	height: 55px;
+}
+button {
+	color: #f4efbc;
+	height: 50px;
+	width: 60px;
+	outline: none;
+	margin-top: 5px;
+	margin-left: 6px;
+	border-radius: 3px;
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #f8f5d4;
+	text-shadow: 0 -1px 0 #989a11;
+	box-shadow: 0 1px 0 #827e36, 0 2px 0 #978655, 0 3px 6px rgba(59, 56, 10, 0.6);
+	cursor: pointer;
+	border-color: #e7e3b3;
+}
+#first {
+	height: 60px;
+	border-radius: 0 0 4px 4px ;
+	-webkit-box-shadow: 1px 1px 5px 1px #978655;
+}
+#fifth {
+	border-radius: 4px 4px 0 0;
+	
+}
+.screenText {
+	background-color: #999;
+	height: 16px;
+	width: 250px;
+	outline: none;
+	resize: none;
+	border: none;
+}
+footer{
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 110px;
+	display: block;
+	height: 110px;
+	width: 980px;
+	background-image: url(../images/calcFooter.jpg);	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
